@@ -34,10 +34,10 @@ async function fetchData(urlApi) {
                     <img src="${video.video.thumbnails[3].url}" alt= "" class="w-full">
                 </div>
                 <div class="mt-4 flex justify-between">
-                    <h3 class="text-sm text-gray-700">
+                    <a href="https://www.youtube.com/watch?v=${video.video.videoId}"><h3 class="text-sm text-gray-700">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     ${video.video.title}
-                    </h3>
+                    </h3></a>
                 </div>
             </div>
             `).slice(0, 8).join('')}
